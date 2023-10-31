@@ -1,0 +1,117 @@
+.nav_shop_block{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	outline: 2px solid black;
+	outline-offset: -1px;
+}
+.shoping_card_title{
+	padding: 20px 0px;
+	text-align: center;
+	font-family: Alexandria;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #000;
+}
+.shoping_cards{
+	background-color: #e7e7e7;
+}
+
+.shoping_cards_row{
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+.shop_card_xl{
+	flex: 0 50%;
+}
+.shoping_cards_sm_row{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.shoping_card_sm{
+	flex: 0 1 50%;
+}
+@media(max-width: 1199.98px){
+	.shoping_cards_row{
+	display: flex;
+	flex-direction: column;
+	}
+	.last_items .shop_card:first-child{
+		flex: 0 0 50%;
+	}
+	.last_items .shop_card:nth-child(2){
+		flex: 0 0 50%;
+	}
+	.none{
+		display: none;
+	}
+	.last_items{
+		flex-direction: row;
+	}
+	.shop_card_first{
+		order: 1;
+	}
+	.shop_card_second{
+		order: 2;
+	}
+	.shop_card_third{
+		order: 4;
+	}
+	.shop_card_four{
+		order: 3;
+	}
+}
+
+.shop_card{
+	outline: 2px solid black;
+	outline-offset: -1px;
+}
+.last_items .shop_card{
+	flex: 0 0 25%;
+}
+.shoping_card_info{
+	border-top: 2px solid #000;
+	font-family: Alexandria;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 10px;	
+}
+.shoping_card_sm_info{
+	border-top: 2px solid #000;
+	font-family: Alexandria;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 10px;	
+	height: 70px;
+}
+
+.shoping_card_img img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shoping_card_sm_img img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cover_item{
+	display:flex;
+	flex-direction:column;
+	min-height: 100%;
+}	
+
+.flex_img_cover{
+	flex: 1 1 auto;
+}
